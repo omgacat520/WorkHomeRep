@@ -13,3 +13,5 @@ TO RECEIVE FILES FROM REMOTE REPOSITORY (GitHub)
 $ git fetch <remote> Replace remote with URL of gitRepository.
 
 For adding School Remote https://stackoverflow.com/questions/849308/pull-push-from-multiple-remote-locations
+
+Does this work?
