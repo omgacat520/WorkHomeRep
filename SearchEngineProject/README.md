@@ -15,3 +15,11 @@ $ git fetch <remote> Replace remote with URL of gitRepository.
 For adding School Remote https://stackoverflow.com/questions/849308/pull-push-from-multiple-remote-locations
 
 FOR FUTURE SETUPS ON SEPERATE SYSTEMS
+Git Pull = Update Local versions
+
+SETUP
+cd repo <-- Remember to specify where the git init will place repository for concise file organization within the PC. (also prevents hacking by not allowing remote editing of localized files on ENTIRE pc.)
+git init
+git remote add origin <url>
+git fetch origin
+git checkout master

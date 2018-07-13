@@ -10,25 +10,39 @@
     html {
         background-image:url(images/dogbackground.jpg);
         background-size:cover;
-        background-repeat:repeat-x;
+        background-repeat:repeat-x repeat-y;
     }
     .results h1 {
         background-color:rgb(99, 99, 99);
         color:rgb(255, 187, 61);
     }
+    .logo img {
+        width:26vw;
+    }
+    .submit input {
+        font-size:4.2vw;
+        margin-top:.65em;
+    }
+
+    .TopBar {
+        display:flex;
+        flex-wrap:wrap;
+        margin:1vw;
+        margin-left:2vw;
+    }
     </style>
 </head>
 <script>
-    function Display () {
+    /*function Display () {
         var text = document.getElementById("data").value;
         document.getElementById("text").textContent = text;
-        //document.getElementByClassName("submit").addEventListener("click", onclick)
-            //function onclick () {
-                //FormData.get(data)
-                //location.reload(); //this reloads the document
-            //}
+        document.getElementByClassName("submit").addEventListener("click", onclick)
+            function onclick () {
+                FormData.get(data)
+                location.reload(); this reloads the document
+            }
     }
-    onload = Display;
+    onload = Display; */
 </script>
 <body>
     <div class="container">
@@ -38,16 +52,14 @@
                 <div class="submit">
                     <form>
                     <input id="data" type="text" placeholder="search up in this right here" size="30em">
-                    <input type="submit" value="search up in this right here">
+                    <input type="submit" value="search">
                     </form>
                 </div>
             </div>
-            
-            <!--<div class="results">
-                <h1>Showing Results for <div id=#text> </div></h1>
-            </div>-->
-
         </div>
+        <!--<div class="results">
+            <h1>Showing Results for <div id=#text> </div></h1>
+        </div>-->
     </div>
     
 </body>
