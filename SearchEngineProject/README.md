@@ -7,3 +7,7 @@ git push -u origin master
 NEEDS 2 PAGES, RESULT AND SEARCH
 needs (non-functional) search bar with fluid design,
 avoid using media queries, rely on FlexBox and Grid.
+
+
+TO RECEIVE FILES FROM REMOTE REPOSITORY (GitHub)
+$ git fetch <remote> Replace remote with URL of gitRepository.
