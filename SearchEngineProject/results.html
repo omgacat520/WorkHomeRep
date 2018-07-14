@@ -31,28 +31,47 @@
 
 /*RESULTS Styles*/
     .results {
-        display:flex;
-        flex-direction:column;
+        display:inline-grid;
+        grid-auto-flow;
         margin:1em;
         color:rgb(0, 0, 0);
     }
     .results #Listings {
         background-color:rgba(39, 39, 39, 0.548);
         color:rgb(201, 201, 201);
+        border:solid 4px black;
+        border-radius:3px;
+        
     }
     .results #Listings .URL a {
         background-color:snow;
         border:solid 2px;
         border-radius:1px;
+        
     }
     .results #text {
         font-style:oblique;
         color:rgb(56, 242, 255);
     }
+    .results .Heading h3{
+        background-color:rgba(39, 39, 39, 0.548);
+        border:solid 4px black;
+        border-radius:3px;
+        width:28%;
+        
+    }
+    
+    @media only screen and (max-width:320px) {
+        .results .Heading h3 {
+            width:60%;  
+        }
+
+
+        }
 
 
     .submit input {
-        font-size:3.15vw;
+        font-size:3.4vw;
         margin-top:.2em;
     }
 
@@ -85,9 +104,9 @@
             <div class="results">
                 <div class="Heading">
                 
-                    <h2> Showing Results for:
+                    <h3> Showing Results for:
                         <div id="text">(insert search here)</div>
-                    </h2>
+                    </h3>
                 </div>
 
 
