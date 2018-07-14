@@ -12,24 +12,50 @@
         background-size:cover;
         background-repeat:repeat-x repeat-y;
     }
-    .results h1 {
-        background-color:rgb(99, 99, 99);
-        color:rgb(255, 187, 61);
+    .content {
+        display:flex;
+        flex-direction:column;
+        background-color:rgba(99, 99, 99, 0.541);
+        border:solid 4px black;
+        border-radius:3px;
     }
-    .logo img {
-        width:26vw;
-    }
-    .submit input {
-        font-size:4.2vw;
-        margin-top:.65em;
+    .TopBar {
+        display:grid;
+        grid-template-columns: .21fr 1.4fr;
+        grid-gap:1.2vw;
     }
 
-    .TopBar {
+    .logo img {
+            width:100%;
+        }
+
+/*RESULTS Styles*/
+    .results {
         display:flex;
-        flex-wrap:wrap;
-        margin:1vw;
-        margin-left:2vw;
+        flex-direction:column;
+        margin:1em;
+        color:rgb(0, 0, 0);
     }
+    .results #Listings {
+        background-color:rgba(39, 39, 39, 0.548);
+        color:rgb(201, 201, 201);
+    }
+    .results #Listings .URL a {
+        background-color:snow;
+        border:solid 2px;
+        border-radius:1px;
+    }
+    .results #text {
+        font-style:oblique;
+        color:rgb(56, 242, 255);
+    }
+
+
+    .submit input {
+        font-size:3.15vw;
+        margin-top:.2em;
+    }
+
     </style>
 </head>
 <script>
@@ -56,10 +82,31 @@
                     </form>
                 </div>
             </div>
+            <div class="results">
+                <div class="Heading">
+                
+                    <h2> Showing Results for:
+                        <div id="text">(insert search here)</div>
+                    </h2>
+                </div>
+
+
+                <div class="SearchResults">
+                    <dl id="Listings">
+                        <dt class="URL">  <h3><a href="url.com">  URL/Title Youtube.com</a></h3>  </dt>
+                            <dd>
+                                <p>Description/maybe incorporate tags/text from within the page.</p>
+                            </dd>
+
+                            <dt class="URL">  <h3><a href="url.com">  URL/Title Youtube.com</a></h3>  </dt>
+                            <dd>
+                                <p>Description/maybe incorporate tags/text from within the page.</p>
+                            </dd>
+                    </dl>
+                </div>
+            </div>
         </div>
-        <!--<div class="results">
-            <h1>Showing Results for <div id=#text> </div></h1>
-        </div>-->
+        </div>
     </div>
     
 </body>
