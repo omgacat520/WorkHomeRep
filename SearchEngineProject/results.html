@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Results Prototype</title>
 
+
     <style>
     html {
         background-image:url(images/dogbackground.jpg);
@@ -32,7 +33,7 @@
 /*RESULTS Styles*/
     .results {
         display:inline-grid;
-        grid-auto-flow;
+        grid-auto-flow:row;
         margin:1em;
         color:rgb(0, 0, 0);
     }
@@ -47,6 +48,7 @@
         background-color:snow;
         border:solid 2px;
         border-radius:1px;
+        margin:.4em;
         
     }
     .results #text {
@@ -65,17 +67,22 @@
         .results .Heading h3 {
             width:60%;  
         }
-
-
         }
 
 
     .submit input {
-        font-size:3.4vw;
+        font-size:3.6vw;
         margin-top:.2em;
+    }
+    .submit input:focus {
+        outline:none;
+        box-shadow:2px 3px 20px 1px rgba(0, 0, 0, 0.404);
+        
     }
 
     </style>
+
+
 </head>
 <script>
     /*function Display () {
@@ -96,7 +103,7 @@
                 <div class="logo"><img src="images/Doge-google.jpg" alt="logo"></div>
                 <div class="submit">
                     <form>
-                    <input id="data" type="text" placeholder="search up in this right here" size="30em">
+                    <input id="data" type="text" placeholder="search up in this right here" size="30em" autocomplete="off">
                     <input type="submit" value="search">
                     </form>
                 </div>
