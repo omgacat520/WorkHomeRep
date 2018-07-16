@@ -1,1 +1,3 @@
 progit.pdf
+H:/CTS2018/NOTCOMMITED/
+GitIgnore.txt
