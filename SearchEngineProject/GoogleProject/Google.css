@@ -1,0 +1,29 @@
+header {
+    font-size:13px;
+    width:100vw;
+    display:grid;
+    grid-template-rows:2;
+    grid-template-columns:2;
+}
+header a{
+    font-family:Arial, Sans-serif;
+    text-decoration:none;
+    color:black;
+}
+header a:hover {
+    text-decoration:underline;
+}
+header input {
+    font-family:Arial, Sans-serif;
+    color:white;
+    background:#4d90fe;
+    border-color:#3079ed;
+    font-weight:bold;
+    border-radius:2px;
+}
+header .left {
+    justify-self:center;
+}
+header .right {
+    justify-self:center;
+}
