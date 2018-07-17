@@ -1,9 +1,14 @@
+* {
+    margin:0px;
+}
 header {
+    position:absolute;
     font-size:13px;
-    width:100vw;
-    display:grid;
-    grid-template-rows:2;
-    grid-template-columns:2;
+    width:100%;
+    display:inline-flex;
+    flex-grow:1;
+    margin:1em;
+
 }
 header a{
     font-family:Arial, Sans-serif;
@@ -21,9 +26,43 @@ header input {
     font-weight:bold;
     border-radius:2px;
 }
-header .left {
-    justify-self:center;
+.left {
+    flex-grow:1;
+    margin:.5em;
 }
-header .right {
-    justify-self:center;
+
+.right {
+    flex-grow:1;
+    text-align:right;
+    margin:.5em;
+}
+
+
+
+.content {
+    display:flex;
+    flex-wrap:wrap;
+    align-content:center;
+    justify-content:center;
+    
+}
+.content form {
+    display:flex;
+    flex-direction:column;
+}
+.buttons {
+    display:flex;
+}
+.buttons button {
+    flex-grow:.5;
+    margin:.2em;
+}
+
+
+footer {
+    position:absolute;
+    display:inline-flex;
+    flex-direction:ltr;
+    flex-grow:1;
+    justify-items:space-evenly;
 }
