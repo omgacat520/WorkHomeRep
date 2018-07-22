@@ -6,4 +6,5 @@ npm-debug.log
 yarn-error.log
 
 # project
-dist/env.js
+MadlibReact/env.js
+MadlibReact/package.json
