@@ -1,9 +1,0 @@
-#ignore folder named 'NOTCOMMITED'
-H:/CTS2018/NOTCOMMITED/
-#nodejs
-node_modules/
-npm-debug.log
-yarn-error.log
-
-# project
-dist/env.js
