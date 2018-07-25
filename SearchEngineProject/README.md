@@ -19,8 +19,8 @@ FOR FUTURE SETUPS ON SEPERATE SYSTEMS
 Git Pull = Update Local versions
 
 SETUP
->>cd <repository location> <-- Remember to specify where the git init will place repository for concise file organization within the PC. (also prevents hacking by not allowing remote editing of localized files on ENTIRE pc.)
->>git init
->>git remote add origin <url>
->>git fetch origin
->>git checkout master
+>>cd repo <-- Remember to specify where the git init will place repository for concise file organization within the PC. (also prevents hacking by not allowing remote editing of localized files on ENTIRE pc.)<br>
+>>git init<br>
+>>git remote add origin (url)<br>
+>>git fetch origin<br>
+>>git checkout master<br>
