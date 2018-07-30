@@ -24,3 +24,11 @@ SETUP
 >>git remote add origin (url)<br>
 >>git fetch origin<br>
 >>git checkout master<br>
+
+
+TO WHOM IT MAY CONCERN:
+
+The finished Week 2 project is nested inside the GoogleProject folder within this one.
+I started a couple but settled on the Google Homepage project.
+
+Thanks, -J.
